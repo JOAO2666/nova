@@ -1,27 +1,38 @@
-# Não Vá App
+# Não Vá Que É Barril
 
-Um aplicativo para alertas de segurança que ajuda as pessoas a evitarem áreas perigosas.
+Um aplicativo colaborativo de segurança pública que permite aos usuários visualizar e reportar ocorrências em tempo real.
 
-## 🚀 Sobre o Projeto
+## Sobre o Projeto
 
-O Não Vá App é uma plataforma que permite aos usuários:
-- Visualizar alertas de segurança em tempo real
-- Reportar incidentes em áreas específicas
-- Ver um mapa com zonas de risco
-- Receber notificações sobre áreas perigosas próximas
+O "Não Vá Que É Barril" é uma plataforma que visa aumentar a segurança nas cidades através de:
+- Mapa interativo de ocorrências
+- Sistema de classificação de segurança por região
+- Alertas em tempo real
+- Dicas de segurança
+- Integração com autoridades
 
-## 🛠️ Tecnologias Utilizadas
+## Funcionalidades Principais
 
-- React/Next.js
-- Firebase
-- TypeScript
-- GitHub Pages
+- Visualização de ocorrências em mapa interativo
+- Registro de novas ocorrências
+- Sistema de alertas personalizados
+- Classificação de áreas por nível de segurança
+- Dicas e orientações de segurança
+- Colaboração comunitária
+
+## Tecnologias Utilizadas
+
+- React Native (Frontend mobile)
+- Node.js (Backend)
+- MongoDB (Banco de dados)
+- Google Maps API (Integração de mapas)
+- Firebase (Notificações em tempo real)
 
 ## 🌐 Acesso ao Site
 
 O aplicativo está disponível em: [https://joao2666.github.io/nova](https://joao2666.github.io/nova)
 
-## 💻 Instalação e Uso Local
+## Configuração do Ambiente de Desenvolvimento
 
 1. Clone o repositório:
 ```bash
@@ -34,20 +45,16 @@ cd nova
 npm install
 ```
 
-3. Execute o projeto localmente:
+3. Execute o projeto:
 ```bash
 npm run dev
 ```
 
 4. Acesse o projeto em `http://localhost:3000/nova`
 
-## 📱 Versão Mobile
+## Contribuição
 
-Este projeto também possui uma versão mobile desenvolvida com React Native e Expo. O código fonte da versão mobile está disponível em branches separadas.
-
-## 🤝 Contribuição
-
-Contribuições são sempre bem-vindas! Para contribuir:
+Contribuições são bem-vindas! Por favor, leia o guia de contribuição antes de submeter pull requests.
 
 1. Faça um Fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
@@ -55,10 +62,6 @@ Contribuições são sempre bem-vindas! Para contribuir:
 4. Push para a branch (`git push origin feature/NovaFeature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 📞 Contato
-
-Para mais informações ou dúvidas, entre em contato através do GitHub.
+Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
