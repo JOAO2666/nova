@@ -1,20 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+import HomeScreen from './src/screens/HomeScreen';
+import MapScreen from './src/screens/MapScreen';
+import ReportScreen from './src/screens/ReportScreen';
+import AlertsScreen from './src/screens/AlertsScreen';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <PaperProvider>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen 
+            name="Home" 
+            component={HomeScreen} 
+            options={{ title: 'Não Vá Que É Barril' }}
+          />
+          <Stack.Screen 
+            name="Map" 
+            component={MapScreen} 
+            options={{ title: 'Mapa de Ocorrências' }}
+          />
+          <Stack.Screen 
+            name="Report" 
+            component={ReportScreen} 
+            options={{ title: 'Registrar Ocorrência' }}
+          />
+          <Stack.Screen 
+            name="Alerts" 
+            component={AlertsScreen} 
+            options={{ title: 'Alertas' }}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </PaperProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
